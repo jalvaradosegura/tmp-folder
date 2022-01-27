@@ -1,0 +1,17 @@
+# python
+__pycache__/
+
+# text editor
+.vscode/
+*.swp
+*.swo
+
+# coverage
+.coverage
+htmlcov
+
+# Tests
+.tox
+
+# macOS
+.DS_Store
