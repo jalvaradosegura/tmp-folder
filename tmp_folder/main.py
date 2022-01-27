@@ -1,7 +1,14 @@
+from __future__ import annotations
+
 import functools
+import sys
 import tempfile
 from pathlib import Path
-from typing import Callable, Concatenate, ParamSpec, TypeVar
+
+if sys.version_info < (3, 8):
+    from typing import Callable, Concatenate, ParamSpec, TypeVar
+else:
+    from typing_extensions import Callable, Concatenate, ParamSpec, TypeVar
 
 P = ParamSpec("P")
 R = TypeVar("R")
