@@ -17,3 +17,35 @@
   </a>
 
 </p>
+
+---
+## tmp-folder
+Easily create a temporary folder. Put files in it and after you're done tmp-folder will delete the folder automatically.
+
+## Usage
+```py
+from pathlib import Path
+
+from tmp_folder.main import use_tmp_folder
+
+
+@use_tmp_folder  # this decorator does the magic
+def this_func_create_a_tmp_file_and_return_its_path(tmp_folder: Path) -> Path:
+    tmp_file_path = tmp_folder / "tmp_file.txt"
+    with open(tmp_file_path, "w") as file:
+        file.write("Hello World")
+
+    assert tmp_file_path.exists()  # double check that the file actually exists
+
+    return tmp_file_path
+
+
+if __name__ == "__main__":
+    tmp_file_path = this_func_create_a_tmp_file_and_return_its_path()
+
+    # After the function is executed, the folder and its files are gone.
+    assert not tmp_file_path.exists()
+
+```
+
+Just decorate the function in which you need a temporary folder. Then add as first parameter, the variable that will hold the folder path (it can be named however you want). After the function is done executing, the folder and its file will be deleted.
