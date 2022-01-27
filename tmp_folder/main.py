@@ -11,7 +11,6 @@ def use_tmp_folder(func: Callable[Concatenate[Path, P], R]) -> Callable[P, R]:
     @functools.wraps(func)
     def wrapper(*args: P.args, **kwargs: P.kwargs) -> R:
         with tempfile.TemporaryDirectory() as tmp_folder:
-            result = func(Path(tmp_folder), *args, **kwargs)
-        return result
+            return func(Path(tmp_folder), *args, **kwargs)
 
     return wrapper
