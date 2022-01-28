@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from tmp_folder.main import use_tmp_folder
+from tmp_folder import use_tmp_folder
 
 
 def test_use_tmp_folder():

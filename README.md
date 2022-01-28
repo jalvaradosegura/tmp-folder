@@ -19,8 +19,21 @@
 </p>
 
 ---
+
+Documentation: https://jalvaradosegura.github.io/tmp-folder/
+
+---
+
 ## tmp-folder
 Easily create a temporary folder. Put files in it and after you're done tmp-folder will delete the folder automatically.
+
+## Installation
+
+Install from PyPI:
+
+```
+pip install tmp-folder
+```
 
 ## Usage
 ```py
