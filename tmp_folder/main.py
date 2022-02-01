@@ -6,7 +6,7 @@ import tempfile
 from pathlib import Path
 from typing import Callable, TypeVar
 
-if sys.version_info < (3, 10):  # pragma: no cover
+if sys.version_info < (3, 10):
     from typing_extensions import Concatenate, ParamSpec
 else:  # pragma: no cover
     from typing import Concatenate, ParamSpec
