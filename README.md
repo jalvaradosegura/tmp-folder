@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="https://raw.githubusercontent.com/jalvaradosegura/tmp-folder/main/docs/tmp-folder.png" alt="tmp-folder">
+</p>
+
+<p align="center">
 
   <a href="https://codecov.io/gh/jalvaradosegura/tmp-folder">
     <img src="https://codecov.io/gh/jalvaradosegura/tmp-folder/branch/main/graph/badge.svg?token=IL5PVTYVRV"/>
@@ -14,6 +18,14 @@
 
   <a href="https://github.com/jalvaradosegura/tmp-folder/actions/workflows/unit_tests.yml" target="_blank">
     <img src="https://github.com/jalvaradosegura/tmp-folder/actions/workflows/unit_tests.yml/badge.svg" alt="License">
+  </a>
+
+  <a href="https://pepy.tech/project/tmp-folder" target="_blank">
+    <img src="https://static.pepy.tech/personalized-badge/tmp-folder?period=total&units=international_system&left_color=grey&right_color=blue&left_text=downloads" alt="downloads">
+  </a>
+
+  <a href="https://www.instagram.com/circus.infernus/" target="_blank">
+    <img src="https://img.shields.io/badge/image--by-%40circus.infernus-blue" alt="image-by">
   </a>
 
 </p>
