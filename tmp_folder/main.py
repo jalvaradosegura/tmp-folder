@@ -8,7 +8,7 @@ from typing import Callable, TypeVar
 
 if sys.version_info < (3, 10):  # pragma: no cover
     from typing_extensions import Concatenate, ParamSpec
-else:  # pragma: no cover
+else:
     from typing import Concatenate, ParamSpec
 
 P = ParamSpec("P")
