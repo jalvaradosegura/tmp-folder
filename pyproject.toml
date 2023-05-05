@@ -1,8 +1,12 @@
 [tool.poetry]
 name = "tmp-folder"
 version = "0.1.0"
-description = ""
+description = "Extends python `TemporaryDirectory` and make it even easier to use, as a decorator."
 authors = ["Jorge Alvarado <alvaradosegurajorge@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://jalvaradosegura.github.io/tmp-folder/"
+repository = "https://github.com/jalvaradosegura/tmp-folder"
 
 [tool.poetry.dependencies]
 python = "^3.7"
